@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bg">
+        <div class="container nav-flex gap-24">
+            <a class="nav-btn" href="home.html">Home</a>
+            <a class="nav-btn" href="projects.html">Design Projects</a>
+            <a class="nav-btn" href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+
+    <form class="form">
+        <h1>Form</h1>
+        <div class="card flex-col gap-24">
+            <div class="flex-row">
+                <label for="name">Name</label>
+                <input class="input" type="text" name="name">
+            </div>
+
+            <div class="flex-row">
+                <label for="email">Email</label>
+                <input class="input" type="email" name="email">
+            </div>
+
+            <div class="flex-row">
+                <label for="message">Message</label>
+                <textarea class="input" name="message"></textarea>
+            </div>
+
+            <input class="submit-btn" type="submit">
+        </div>
+    </form>
+</body>
+</html>

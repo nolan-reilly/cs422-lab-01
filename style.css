@@ -13,13 +13,21 @@ img {
     max-width: 100%;
 }
 
+.shopping-icon {
+    width: 128px;
+}
+
+ul {
+    margin-left: 24px;
+}
+
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
 }
 
 .nav-bg {
-    background-color: #010101;
+    background-color: black;
     padding: 24px 0px;
     margin-bottom: 64px;
 }
@@ -31,7 +39,7 @@ img {
 }
 
 .nav-btn {
-    background-color: #D3D1D1;
+    background-color: white;
     color: black;
     padding: 10px 24px;
     border-radius: 8px;
@@ -44,16 +52,73 @@ img {
 }
 
 .card {
-    background-color: #FFF;
+    background-color: white;
+    padding: 24px;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+
+/* On mobile screen this will be a column */
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    padding: 6px 4px;
+}
+
+.submit-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.form {
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 @media (min-width: 868px) {
     .flex {
         display: flex;
+        flex-direction: row;
         gap: 32px;
     }
 
     .flex > div {
         flex: 1 0 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
